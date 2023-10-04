@@ -16,6 +16,18 @@ console.log(nama, pekerjaan);
 const ituObject = new Object({ skill: "javascript" });
 const newObject = new Object({ ...iniObject, ...ituObject });
 console.log(newObject);
+// more about Object
+const artistsAndSongs = {
+    "Keyakizaka46": ["Silent Majority"],
+    "Blackpink": ["How You Like That", "Ice Cream"],
+    "JKT48": ["Rapsodi", "Heavy Rotation"],
+    "Twice": ["What is Love?"]}
+
+artistsAndSongs["Babymetal"] = ["Gimme chocolate"];
+delete artistsAndSongs["Keyakizaka46"];
+artistsAndSongs["Blackpink"].push("Rose - Gone");
+
+console.log(artistsAndSongs);
 
 // array
 const iniArray = new Array(["aku", "adalah", "tegar"]);
