@@ -1,4 +1,4 @@
-// OOP: Inheritence
+// OOP: Inheritence, Overriding
 // Mobile Legend: Unit -> Turret & Hero
 
 class Unit {
@@ -11,7 +11,11 @@ class Unit {
   }
 }
 
-class Turret extends Unit {}
+class Turret extends Unit {
+  attack() {
+    return `turret is ${super.attack()}`;
+  }
+}
 
 class Hero extends Unit {
   skillAttack() {
@@ -26,5 +30,6 @@ console.log(redTurret);
 console.log(redTurret.attack());
 
 console.log(zilong);
-console.log(zilong.attack());
+console.log(zilong.name);
+console.log(zilong.attack()); // attack() sudah otomatis method overriding dari super class Unit
 console.log(zilong.skillAttack());
