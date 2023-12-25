@@ -26,3 +26,13 @@ getUsers(false)
 // 2 cara mengubah callback menjadi promise: refactor & fitur promisify
 
 // Promise berantai. pemaggilan function dg  bnyk .then
+
+// Promise static method digunakan utk mengatur banyak promise
+// Promise.all, Promise.race, Promise.allSettled, dan Promise.any.  di bawah adl contoh promise.all()
+
+const promise1 = new Promise((resolve) => setTimeout(() => resolve(1), 1000));
+const promise2 = new Promise((resolve) => setTimeout(() => resolve(2), 2000));
+const promise3 = new Promise((resolve) => setTimeout(() => resolve(3), 3000));
+
+Promise.all([promise1, promise2, promise3]).then((values) => console.log(values)); // [1, 2, 3] setelah 3 detik
+
