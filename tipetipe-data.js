@@ -19,7 +19,7 @@ alert( bag.apple ); // 5 if fruit="apple"
 
 // accessing and modifying object
 console.log(iniObject.nama);
-console.log(iniObject["nama"]);
+console.log(iniObject["nama"]); //best practice krn dpt menggunakan spasi
 iniObject["usia"] = 99;
 console.log(iniObject);
 
