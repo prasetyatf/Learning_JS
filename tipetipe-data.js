@@ -6,16 +6,31 @@
 const emptyObj = {};
 const emptyObj2 = new Object();
 
-// object is key-value pair. the key is string or computed property [].
+// object is key-value pair. 
 // the value can be anything, even a function.
 const iniObject = new Object({ nama: "tegar", usia: 22 });
 const objFunc = {anu: function(){return 2*2}};
-
+// the key is string or computed property [].
 let fruit = prompt("Which fruit to buy?", "apple");
 let bag = {
   [fruit]: 5, // the name of the property is taken from the variable fruit
 };
 alert( bag.apple ); // 5 if fruit="apple"
+
+// if the value = variable then it can be simplified
+function makeUser(name, age) {
+  return {
+    name, // same as name: name
+    age,  // same as age: age
+  };
+}
+
+// if key = value then it can be simplified
+const iniObj = {
+  name, //name:name
+  age:30,
+};
+
 
 // accessing and modifying object
 console.log(iniObject.nama);
