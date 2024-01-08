@@ -7,8 +7,8 @@ const emptyObj = {};
 const emptyObj2 = new Object();
 
 // object is key-value pair. 
-// the value can be anything, even a function.
 const iniObject = new Object({ nama: "tegar", usia: 22 });
+// the value can be anything, even a function. it's like OOP, you can call method of the variable.
 const objFunc = {anu: function(){return 2*2}};
 // the key is string or computed property [].
 let fruit = prompt("Which fruit to buy?", "apple");
