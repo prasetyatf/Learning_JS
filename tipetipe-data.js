@@ -1,10 +1,16 @@
-// number, string, bigint, undefined, null, boolean,dll
-// object, array, map, set
+// primitive data type: number, string, bigint, undefined, null, boolean
+// non-primitive data type: object 
+// array, map, set
+
+// empty object is called cabinet
+const emptyObj = {};
+const emptyObj2 = new Obj();
 
 // object
 const iniObject = new Object({ nama: "tegar", usia: 22 });
 
 // accessing and modifying object
+console.log(iniObject.nama);
 console.log(iniObject["nama"]);
 iniObject["usia"] = 99;
 console.log(iniObject);
