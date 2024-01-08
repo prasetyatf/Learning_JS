@@ -6,8 +6,16 @@
 const emptyObj = {};
 const emptyObj2 = new Object();
 
-// object
+// object is key-value pair. the key is string or computed property [].
+// the value can be anything, even a function.
 const iniObject = new Object({ nama: "tegar", usia: 22 });
+const objFunc = {anu: function(){return 2*2}};
+
+let fruit = prompt("Which fruit to buy?", "apple");
+let bag = {
+  [fruit]: 5, // the name of the property is taken from the variable fruit
+};
+alert( bag.apple ); // 5 if fruit="apple"
 
 // accessing and modifying object
 console.log(iniObject.nama);
