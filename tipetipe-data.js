@@ -4,7 +4,7 @@
 
 // empty object is called cabinet
 const emptyObj = {};
-const emptyObj2 = new Obj();
+const emptyObj2 = new Object();
 
 // object
 const iniObject = new Object({ nama: "tegar", usia: 22 });
