@@ -1,0 +1,21 @@
+GLOBAL PACKAGE IN NPM
+WHEN: install package scr global hanya untuk package yang digunakan di semua project dan
+dapat digunakan via CLI
+HOW: npm i -g nama-package
+CONTOH: nodemon, jest
+
+LOCAL PACKAGE IN NPM
+WHEN: instal package yang dibutuhkan aplikasi saat development & saat dipublish
+HOW: npm i nama-package (pastikan menginstalnya di directory project)
+CONTOH: express, commander
+
+LOCAL DEV PACKAGE IN NPM
+WHEN: install package yang dibutuhkan aplikasi saat dev saja
+HOW: npm i nama-package --save-dev
+CONTOH: jest, mocha
+
+package.json dependencies (~)patch dan (^)minor
+~ berarti npm dapat menginstal 1.0.1, 1.0.2 dst.
+^ berarti npm dapat mengintal 1.1.0, 1.2.0 dst.
+
+package-lock.json dibuat scr otomatis dan berisi detail versi dari package
