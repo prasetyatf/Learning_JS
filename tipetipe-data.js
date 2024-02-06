@@ -39,9 +39,11 @@ const iniObj = {
 
 
 // accessing and modifying object
-console.log(iniObject.nama);
-console.log(iniObject["nama"]); //best practice krn dpt menggunakan spasi
-iniObject["usia"] = 99;
+console.log(iniObject.nama); //accessing
+console.log(iniObject["nama"]); 
+iniObject["usia"] = 99; //assigning
+console.log(iniObject);
+delete iniObject.age; //deleting
 console.log(iniObject);
 
 // destructuring object
