@@ -1,4 +1,10 @@
 // primitive data type: number, string, bigint, undefined, null, boolean
+
+x = new String();        // Declares x as a String object
+y = new Number();        // Declares y as a Number object
+z = new Boolean();       // Declares z as a Boolean object
+//Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+
 // non-primitive data type: object 
 // array, map, set
 
