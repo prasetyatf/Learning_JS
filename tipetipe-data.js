@@ -99,5 +99,20 @@ console.log(iniSet);
 iniSet.delete(1);
 console.log(iniSet);
 
+//Switch case
+switch (expression) {
+      case value1:
+        // do something
+        break;
+      case value2:
+        // do something
+        break;
+      ...
+      ...
+      default: // its like else
+        // do something else
+    }
+
+
 
 
